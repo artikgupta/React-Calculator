@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+h1 {
+  text-align: center;
+  margin: 1rem;
+  width: 50%;
+  margin: 0 auto;
+  color: white;
+  background-color: #413c58;
+}
+.main-container {
+  background-color: #85c7f2;
+  width: 100vw;
+  height: 100vh;
+  padding: 2rem;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  min-height: 30rem;
+  width: 50%;
+  background-color: #dbdbdb;
+  margin: auto;
+  padding: 3rem;
+}
+.inputs {
+  display: flex;
+  width: 100%;
+  /* border: 1px solid red; */
+  justify-content: space-evenly;
+}
+.labels {
+  width: 100%;
+  height: 25%;
+  margin: 15px;
+
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+/* .label-2 {
+  width: 100%;
+  height: 25%;
+  margin: 15px;
+  border: 1px solid red;
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+} */
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 4rem;
+  text-align: center;
+}
+input[type="number"] {
+  width: 100%;
+  height: 3rem;
+  /* margin-left: 1rem; */
+}
+.btn {
+  border-radius: 50%;
+  padding: 1rem;
+  border: none;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+.btn-add {
+  background-color: #4c4c4c;
+}
+.btn-sub {
+  background-color: #413c58;
+}
+.btn-multiply {
+  background-color: #a3c4bc;
+  align-items: center;
+  text-align: center;
+}
+.btn-divide {
+  background-color: #bfd7b5;
+}
+.result {
+  position: absolute;
+  text-align: center;
+  align-items: center;
+  top: 60%;
+  left: 40%;
+  color: #2e294e;
+}
+@media (max-width: 1200px) {
+  h1 {
+    min-width: 300px;
+  }
+  .container {
+    min-width: 300px;
+  }
+  .buttons {
+    width: 100%;
+    margin: 20px auto;
+  }
+  .result {
+    top: 60%;
+    left: 25%;
+  }
+}
